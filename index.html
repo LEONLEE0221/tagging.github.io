@@ -1,0 +1,4 @@
+async function loadFileData(fileName) {
+    const response = await fetch(`/path/to/csv/${fileName}`);
+    return await response.text();
+}
